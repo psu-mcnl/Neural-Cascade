@@ -489,10 +489,10 @@ session_used = np.setdiff1d(session_fc_ids,settings.observatory.sess_removed)
 def main():
     vars2proc = AttrDict(
         rsData1 = True,
-        flData = False,
-        dgrData = False,
-        dgcData = False,
-        lfpData = False,
+        flData = True,
+        dgrData = True,
+        dgcData = True,
+        lfpData = True,
         sessData = True,
         rsData2 = True
     )
