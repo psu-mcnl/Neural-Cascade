@@ -7,12 +7,12 @@ from utils import *
 settings = DataContainer()
 
 """ project general settings """
-settings.homeDir = Path('/home/yifan')
+settings.homeDir = Path('/home/xxxx')
 settings.projectDir = Path(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))))
 
 """ dataset: allen observotory """
 observatory = DataContainer()
-observatory.data_directory = Path('/home/yifan/Data/Datasets/Allen-Brain-Observatory')
+observatory.data_directory = Path('path-to-brain-observatory-dataset')
 observatory.manifest_path = observatory.data_directory / 'manifest.json'
 
 observatory.sess_removed = [767871931, 768515987, 778240327, 786091066, 787025148, 789848216, 
@@ -24,7 +24,7 @@ settings.observatory = observatory
 
 """ dataset: mouse connectivity """
 connectivity =  DataContainer()
-connectivity.data_directory = Path('/home/yifan/Data/Datasets/Allen-Mouse-Brain-Connectivity')
+connectivity.data_directory = Path('path-to-mouse-connectivity-dataset')
 connectivity.manifest_path = connectivity.data_directory / 'manifest.json'
 
 settings.connectivity = connectivity
@@ -33,7 +33,7 @@ settings.connectivity = connectivity
 projectData = DataContainer()
 projectData.dir = DataContainer()
 
-projectData.dir.root = settings.homeDir / 'Data/Project-Data/Neuroscience/Neural-Cascade'
+projectData.dir.root = Path('path-to-save-project-data')
 projectData.dir.sessions = projectData.dir.root / 'sessions'
 projectData.dir.groupLevel = settings.homeDir / 'group-level'
 
