@@ -43,5 +43,5 @@ To successfully run the code and reproduce the results, the following packages a
    ```py
    projectData.dir.root = Path('path-to-save-project-data')
    ```
- 4. Run main_proc.py to process the data.
+ 4. Run `main_proc.py` to process the data.
  5. Run `results_example.ipynb` and `results_group.ipynb` for data analysis.
