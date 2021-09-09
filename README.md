@@ -12,7 +12,6 @@
     <li>
       <a href="#usage">Usage</a>
     </li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -46,8 +45,3 @@ To successfully run the code and reproduce the results, the following packages a
    ```
  4. Run main_proc.py to process the data.
  5. Run `results_example.ipynb` and `results_group.ipynb` for data analysis.
-  
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
